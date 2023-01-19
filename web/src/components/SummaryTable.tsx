@@ -1,11 +1,12 @@
-import { generateDateFromYearBeginning } from "../utils/generate-date-from-year-beginning";
 import { HabitDay } from "./HabitDay";
+
+import { generateDateFromYearBeginning } from "../utils/generate-date-from-year-beginning";
 
 const weekDay = ["D", "S", "T", "Q", "Q", "S", "S"];
 
 const summaryDates = generateDateFromYearBeginning();
 
-const minimumSummaryDatesSize = 18 * 7; // 18 weeks
+const minimumSummaryDatesSize = 18 * 7; //! 18 weeks
 const amountOfDaysToFill = minimumSummaryDatesSize - summaryDates.length;
 
 export function SummaryTable() {
